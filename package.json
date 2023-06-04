@@ -1,9 +1,12 @@
 {
   "name": "react-expense-tracker",
   "private": true,
+  "homepage": "http://Sebitass47.github.io/Expense-Tracker",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint src --ext js,jsx --report-unused-disable-directives --max-warnings 0",
@@ -11,6 +14,7 @@
   },
   "dependencies": {
     "bootstrap-icons": "^1.10.5",
+    "gh-pages": "^5.0.0",
     "react": "^18.2.0",
     "react-data-table-component": "^7.5.3",
     "react-dom": "^18.2.0",
